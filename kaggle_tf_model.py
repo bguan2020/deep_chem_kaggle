@@ -1,6 +1,4 @@
-"""
-Script that trains Tensorflow Multitask models on KAGGLE datasets.
-"""
+#training model for TF
 
 from __future__ import print_function
 from __future__ import division
@@ -14,10 +12,9 @@ import deepchem as dc
 from kaggle_datasets import load_kaggle
 
 ###Load data###
-shard_size = 2000
+sh_size = 2000
 num_trials = 2
-print("About to load MERCK data.")
-KAGGLE_tasks, datasets, transformers = load_kaggle(shard_size=shard_size)
+KAGGLE_tasks, datasets, transformers = load_kaggle(sh_size=sh_size)
 train_dataset, valid_dataset, test_dataset = datasets
 
 print("Number of compounds in train set")
