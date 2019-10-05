@@ -1,3 +1,4 @@
 # kaggle_project
-using tf to train kaggle data sets
-deepchem too
+deep chem python libs to train df on machine learning algs
+data from kaggle
+
