@@ -11,7 +11,6 @@ import numpy as np
 import deepchem as dc
 from kaggle_datasets import load_kaggle
 
-###Load data###
 sh_size = 2000
 num_trials = 2
 KAGGLE_tasks, datasets, transformers = load_kaggle(sh_size=sh_size)
@@ -26,7 +25,7 @@ print(len(test_dataset))
 
 all_results = []
 for trial in range(num_trials):
-  ###Create model###
+  #create the actual model
   n_layers = 3 
   nb_epoch = 100 
   model = dc.models.TensorflowMultiTaskRegressor(
